@@ -18,7 +18,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         widthBetweenViews = 10;
-        actualPage = 0;
+        currentPage = 0;
     }
     return self;
 }
@@ -41,11 +41,11 @@
  */
 - (void)scrollViewDidScroll:(UIScrollView *)scroll {
     NSInteger page = lround(scroll.contentOffset.x / scroll.frame.size.width);
-    if (actualPage != page) {
-        actualPage = page;
+    if (currentPage != page) {
+        currentPage = page;
         
         //Update PageControl
-        [pageControl setCurrentPage:actualPage];
+        [pageControl setCurrentPage:currentPage];
     }
 }
 
@@ -57,8 +57,8 @@
     CGPoint touchPoint = [gesture locationInView:scrollView];
     
     //If the tap is on the actual view
-    if(CGRectContainsPoint([[subViews objectAtIndex:actualPage] frame],touchPoint)){
-        NSLog(@"Tap on view : %d",actualPage);
+    if(CGRectContainsPoint([[subViews objectAtIndex:currentPage] frame],touchPoint)){
+        NSLog(@"Tap on view : %d",currentPage);
     }
 }
 

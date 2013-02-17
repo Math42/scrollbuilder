@@ -18,10 +18,8 @@
     viewHeight = 280;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor grayColor];
-    
-    //ScrollView's Frame
+
+
     CGRect scrollBuilderBounds = CGRectMake(0,
                                             (self.window.bounds.size.height-viewHeight)/2,
                                             self.window.bounds.size.width,
@@ -30,8 +28,9 @@
     //Init the view that contains the ScrollView
     SFScrollBuilder *scrollBuilder = [[SFScrollBuilder alloc]initWithFrame:scrollBuilderBounds];
     [scrollBuilder setSubViews:[self generateViews]];
-    [[self window] addSubview:scrollBuilder];
     
+    self.window.backgroundColor = [UIColor grayColor];
+    [self.window addSubview:scrollBuilder];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -39,7 +38,6 @@
 -(NSMutableArray *)generateViews {
     NSMutableArray *views = [[NSMutableArray alloc] init];
     
-    //Init rect of views
     CGRect viewBounds = CGRectMake(0, 0, viewWidth, viewHeight);
     
     NSArray *colors = @[ [UIColor blueColor],

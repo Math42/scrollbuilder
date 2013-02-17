@@ -37,38 +37,25 @@
 }
 
 -(NSMutableArray *)generateViews {
-    
-    NSMutableArray *tabView = [[NSMutableArray alloc] init];
+    NSMutableArray *views = [[NSMutableArray alloc] init];
     
     //Init rect of views
     CGRect viewBounds = CGRectMake(0, 0, viewWidth, viewHeight);
     
-    //View 1
-    SFScrollContent *view = [[SFScrollContent alloc] initWithFrame:viewBounds];
-    [view setBackgroundColor:[UIColor blueColor]];
-    [tabView addObject:view];
+    NSArray *colors = @[ [UIColor blueColor],
+                         [UIColor redColor],
+                         [UIColor brownColor],
+                         [UIColor blackColor],
+                         [UIColor yellowColor]];
     
-    //View 2
-    view = [[SFScrollContent alloc] initWithFrame:viewBounds];
-    [view setBackgroundColor:[UIColor redColor]];
-    [tabView addObject:view];
+    for (UIColor *color in colors) {
+        SFScrollContent *view = [[SFScrollContent alloc] initWithFrame:viewBounds];
+        [view setBackgroundColor:color];
+        [views addObject:view];
+    }
     
-    //View 3
-    view = [[SFScrollContent alloc] initWithFrame:viewBounds];
-    [view setBackgroundColor:[UIColor brownColor]];
-    [tabView addObject:view];
     
-    //View 4
-    view = [[SFScrollContent alloc] initWithFrame:viewBounds];
-    [view setBackgroundColor:[UIColor blackColor]];
-    [tabView addObject:view];
-    
-    //View 5
-    view = [[SFScrollContent alloc] initWithFrame:viewBounds];
-    [view setBackgroundColor:[UIColor yellowColor]];
-    [tabView addObject:view];
-    
-    return tabView;
+    return views;
 }
 
 @end

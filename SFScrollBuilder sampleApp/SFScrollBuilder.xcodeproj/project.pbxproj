@@ -12,11 +12,11 @@
 		C322E04616CE68050081127B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C322E04516CE68050081127B /* CoreGraphics.framework */; };
 		C322E04C16CE68050081127B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C322E04A16CE68050081127B /* InfoPlist.strings */; };
 		C322E04E16CE68050081127B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C322E04D16CE68050081127B /* main.m */; };
-		C322E05216CE68050081127B /* SFScrollBuilderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C322E05116CE68050081127B /* SFScrollBuilderAppDelegate.m */; };
 		C322E05416CE68050081127B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C322E05316CE68050081127B /* Default.png */; };
 		C322E05616CE68050081127B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C322E05516CE68050081127B /* Default@2x.png */; };
 		C322E05816CE68050081127B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C322E05716CE68050081127B /* Default-568h@2x.png */; };
-		C322E06016CE68930081127B /* SFScrollBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C322E05F16CE68930081127B /* SFScrollBuilder.m */; };
+		C3C1700716D22D1700C8EB24 /* SFScrollBuilderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1700616D22D1700C8EB24 /* SFScrollBuilderAppDelegate.m */; };
+		C3C1700916D22D2400C8EB24 /* SFScrollBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C1700816D22D2400C8EB24 /* SFScrollBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,12 @@
 		C322E04D16CE68050081127B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C322E04F16CE68050081127B /* SFScrollBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SFScrollBuilder-Prefix.pch"; sourceTree = "<group>"; };
 		C322E05016CE68050081127B /* SFScrollBuilderAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFScrollBuilderAppDelegate.h; sourceTree = "<group>"; };
-		C322E05116CE68050081127B /* SFScrollBuilderAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFScrollBuilderAppDelegate.m; sourceTree = "<group>"; };
 		C322E05316CE68050081127B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		C322E05516CE68050081127B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		C322E05716CE68050081127B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		C322E05E16CE68930081127B /* SFScrollBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFScrollBuilder.h; sourceTree = "<group>"; };
-		C322E05F16CE68930081127B /* SFScrollBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFScrollBuilder.m; sourceTree = "<group>"; };
+		C322E05E16CE68930081127B /* SFScrollBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SFScrollBuilder.h; path = ../../SFScrollBuilder/SFScrollBuilder.h; sourceTree = "<group>"; };
+		C3C1700616D22D1700C8EB24 /* SFScrollBuilderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFScrollBuilderAppDelegate.m; sourceTree = "<group>"; };
+		C3C1700816D22D2400C8EB24 /* SFScrollBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SFScrollBuilder.m; path = ../../SFScrollBuilder/SFScrollBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,8 @@
 		C322E03516CE68050081127B = {
 			isa = PBXGroup;
 			children = (
-				C322E04716CE68050081127B /* SFScrollBuilder */,
+				C322E04716CE68050081127B /* SFScrollBuilder sampleApp */,
+				C3C1700216D22A4F00C8EB24 /* SFSScrollBuilder */,
 				C322E04016CE68050081127B /* Frameworks */,
 				C322E03F16CE68050081127B /* Products */,
 			);
@@ -78,15 +79,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C322E04716CE68050081127B /* SFScrollBuilder */ = {
+		C322E04716CE68050081127B /* SFScrollBuilder sampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				C3C1700616D22D1700C8EB24 /* SFScrollBuilderAppDelegate.m */,
 				C322E05016CE68050081127B /* SFScrollBuilderAppDelegate.h */,
-				C322E05116CE68050081127B /* SFScrollBuilderAppDelegate.m */,
-				C322E05E16CE68930081127B /* SFScrollBuilder.h */,
-				C322E05F16CE68930081127B /* SFScrollBuilder.m */,
 				C322E04816CE68050081127B /* Supporting Files */,
 			);
+			name = "SFScrollBuilder sampleApp";
 			path = SFScrollBuilder;
 			sourceTree = "<group>";
 		};
@@ -102,6 +102,16 @@
 				C322E05716CE68050081127B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3C1700216D22A4F00C8EB24 /* SFSScrollBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				C3C1700816D22D2400C8EB24 /* SFScrollBuilder.m */,
+				C322E05E16CE68930081127B /* SFScrollBuilder.h */,
+			);
+			name = SFSScrollBuilder;
+			path = SFScrollBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,8 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C322E04E16CE68050081127B /* main.m in Sources */,
-				C322E05216CE68050081127B /* SFScrollBuilderAppDelegate.m in Sources */,
-				C322E06016CE68930081127B /* SFScrollBuilder.m in Sources */,
+				C3C1700716D22D1700C8EB24 /* SFScrollBuilderAppDelegate.m in Sources */,
+				C3C1700916D22D2400C8EB24 /* SFScrollBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

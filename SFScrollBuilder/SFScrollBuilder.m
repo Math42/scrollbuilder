@@ -10,8 +10,6 @@
 
 @implementation SFScrollBuilder
 
-@synthesize subViews;
-
 
 -(id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -133,10 +131,13 @@
 /*
  Used to update view when an array of sub view is received
  */
--(void)setSubViews:(NSMutableArray *)subViewsArray
-{
-    subViews = subViewsArray;
+-(void)setSubViews:(NSMutableArray *)newSubViews{
+    subViews = newSubViews;
     [self updateView];
+}
+
+-(NSMutableArray *)subViews {
+    return subViews;
 }
 
 @end

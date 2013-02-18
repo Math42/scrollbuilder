@@ -14,10 +14,12 @@
     UIPageControl *pageControl;
     int widthBetweenViews;
     NSInteger currentPage;
+    NSMutableArray *subViews;
     
 }
 
-@property (nonatomic, retain) NSMutableArray *subViews;
 
 -(void)updateView;
+-(NSMutableArray *)subViews;
+-(void)setSubViews:(NSMutableArray *)newSubViews;
 @end

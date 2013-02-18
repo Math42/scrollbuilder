@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
 	:tag => "0.1" }
   s.platform     = :ios, '6.0'
   
-  s.source_files = '*.{h,m}'
+  s.source_files = 'SFScrollBuilder/SFScrollBuilder.{h,m}';
 
 end

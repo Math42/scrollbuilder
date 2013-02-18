@@ -17,7 +17,7 @@
     
 }
 
-@property(nonatomic) NSMutableArray *subViews;
+@property (nonatomic, retain) NSMutableArray *subViews;
 
 -(void)updateView;
 @end

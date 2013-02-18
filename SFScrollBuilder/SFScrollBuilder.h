@@ -13,7 +13,7 @@
     UIScrollView *scrollView;
     UIPageControl *pageControl;
     int widthBetweenViews;
-    NSInteger actualPage;
+    NSInteger currentPage;
     
 }
 

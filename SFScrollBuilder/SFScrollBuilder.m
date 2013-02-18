@@ -7,7 +7,6 @@
 //
 
 #import "SFScrollBuilder.h"
-#import "SFScrollContent.h"
 
 @implementation SFScrollBuilder
 
@@ -59,6 +58,7 @@
     //If the tap is on the actual view
     if(CGRectContainsPoint([[subViews objectAtIndex:currentPage] frame],touchPoint)){
         NSLog(@"Tap on view : %d",currentPage);
+        //Do your thing on tap here
     }
 }
 

@@ -7,7 +7,6 @@
 //
 
 #import "SFScrollBuilderAppDelegate.h"
-#import "SFScrollContent.h"
 #import "SFScrollBuilder.h"
 
 @implementation SFScrollBuilderAppDelegate
@@ -47,9 +46,20 @@
                          [UIColor yellowColor]];
     
     for (UIColor *color in colors) {
-        SFScrollContent *view = [[SFScrollContent alloc] initWithFrame:viewBounds];
+        UIView *view = [[UIView alloc] initWithFrame:viewBounds];
         [view setBackgroundColor:color];
         [views addObject:view];
+        
+        //Adding a label on the bottom
+        int textHeight = 20;
+        CGRect bounds = [view bounds];
+        bounds.origin.y = viewBounds.size.height-textHeight;
+        bounds.size.height = textHeight;
+        UILabel *title = [[UILabel alloc] initWithFrame:bounds];
+        title.text = @"View Title";
+        [title setTextAlignment:NSTextAlignmentCenter];
+        [view addSubview:title];
+        
     }
     
     

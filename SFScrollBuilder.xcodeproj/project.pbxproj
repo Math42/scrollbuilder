@@ -17,7 +17,6 @@
 		C322E05616CE68050081127B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C322E05516CE68050081127B /* Default@2x.png */; };
 		C322E05816CE68050081127B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C322E05716CE68050081127B /* Default-568h@2x.png */; };
 		C322E06016CE68930081127B /* SFScrollBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = C322E05F16CE68930081127B /* SFScrollBuilder.m */; };
-		C322E06316CE69040081127B /* SFScrollContent.m in Sources */ = {isa = PBXBuildFile; fileRef = C322E06216CE69040081127B /* SFScrollContent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +35,6 @@
 		C322E05716CE68050081127B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C322E05E16CE68930081127B /* SFScrollBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFScrollBuilder.h; sourceTree = "<group>"; };
 		C322E05F16CE68930081127B /* SFScrollBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFScrollBuilder.m; sourceTree = "<group>"; };
-		C322E06116CE69040081127B /* SFScrollContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFScrollContent.h; sourceTree = "<group>"; };
-		C322E06216CE69040081127B /* SFScrollContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFScrollContent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +83,6 @@
 			children = (
 				C322E05016CE68050081127B /* SFScrollBuilderAppDelegate.h */,
 				C322E05116CE68050081127B /* SFScrollBuilderAppDelegate.m */,
-				C322E06116CE69040081127B /* SFScrollContent.h */,
-				C322E06216CE69040081127B /* SFScrollContent.m */,
 				C322E05E16CE68930081127B /* SFScrollBuilder.h */,
 				C322E05F16CE68930081127B /* SFScrollBuilder.m */,
 				C322E04816CE68050081127B /* Supporting Files */,
@@ -178,7 +173,6 @@
 				C322E04E16CE68050081127B /* main.m in Sources */,
 				C322E05216CE68050081127B /* SFScrollBuilderAppDelegate.m in Sources */,
 				C322E06016CE68930081127B /* SFScrollBuilder.m in Sources */,
-				C322E06316CE69040081127B /* SFScrollContent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +287,7 @@
 				C322E05D16CE68050081127B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
